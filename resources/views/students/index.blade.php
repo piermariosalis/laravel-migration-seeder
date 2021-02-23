@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
+     
+     <a href="{{ route ('students.create') }}" class=" btn btn-warning ">Inserisci</a>
 
     <table class="table">
         <thead>
@@ -27,7 +28,30 @@
                 <td>{{ $student->updated_at}}</td>
                 <td>
                 
-                    SHOW | EDIT | REMOVE
+                <a href="" class="btn btn-primary">
+                
+                <i class="fas fa-eye fa-lg fa-fw"></i>SHOW
+                </a>
+
+               
+
+                <a href="" class="btn btn-primary">
+                
+                <i class="fas fa-eye fa-lg fa-fw"></i>EDIT
+                </a>
+
+                
+
+                <form action="" method="post">
+                    <button type="purge" class="btn btn-danger">
+                    
+                    <i class="fas fa-trash"></i>
+                    PURGE</button>      
+                </form>
+
+
+                
+                
 
                 </td>
             </tr>
