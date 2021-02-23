@@ -44,7 +44,8 @@ class StudentController extends Controller
 
         ]);
         Student::create($validateData);
-
+        
+        return redirect()->route('students.index');
     }
 
     /**
